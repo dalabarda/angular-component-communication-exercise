@@ -28,8 +28,10 @@ export class ProductListComponent implements OnInit {
         this.productParameterService.showImage = value;
     }
 
+
     constructor(private productService: ProductService,
                 private productParameterService: ProductParameterService) { }
+
 
     ngOnInit(): void {
         this.productService.getProducts().subscribe(
