@@ -7,7 +7,9 @@ export class AuthService {
     currentUser: IUser | null;
     redirectUrl: string;
 
+
     constructor() {  }
+
 
     isLoggedIn(): boolean {
         return !!this.currentUser;
